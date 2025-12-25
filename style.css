@@ -1,0 +1,145 @@
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card container */
+.screen {
+  background: rgba(2, 6, 23, 0.95);
+  padding: 35px;
+  border-radius: 14px;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Inputs */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+select {
+  background: #ffffff;
+}
+
+/* Buttons */
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background: #7dd3fc;
+}
+
+/* Poem container */
+pre {
+  font-family: "Playfair Display", serif;
+  background: transparent;
+  padding: 25px 20px;
+  border-radius: 5px;
+  text-align: center;
+  white-space: pre-wrap;
+  line-height: 1.9;
+  font-size: 20px;
+  color: #f8fafc;
+  animation: fadeIn 1.2s ease-in;
+}
+
+/* Poem screen background emphasis */
+.poem-screen {
+  background: radial-gradient(
+    circle at top,
+    #020617,
+    #020617 45%,
+    #000000
+  );
+}
+
+/* Softer secondary button on poem screen */
+.poem-screen button {
+  margin-top: 25px;
+  background: transparent;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.poem-screen button:hover {
+  background: #38bdf8;
+  color: #020617;
+}
+
+/* Subtle fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* --- Style-based atmospheres --- */
+.style-romantic { background: linear-gradient(135deg, #2a0f1f, #020617); }
+.style-dark { background: linear-gradient(135deg, #000000, #020617); }
+.style-motivational { background: linear-gradient(135deg, #0f172a, #1e3a8a); }
+.style-nature { background: linear-gradient(135deg, #052e16, #020617); }
+.style-cyberpunk { background: linear-gradient(135deg, #020617, #3b0764); }
+.style-spiritual { background: linear-gradient(135deg, #020617, #0f766e); }
+
+/* --- Poem history --- */
+.history {
+  margin-top: 25px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 15px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.history h3 {
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.history pre {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  opacity: 0.75;
+}
+
+.range-label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 18px;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 8px;
+}

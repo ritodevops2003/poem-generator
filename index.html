@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Poem Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Screen 1 -->
+    <div id="screen-input" class="screen">
+      <h1>✨ Poem Generator</h1>
+      <p class="subtitle">Turn a word into a poem</p>
+
+      <form id="keywordForm">
+
+  <input
+    type="text"
+    id="keyword"
+    placeholder="Enter a word or idea..."
+    required
+  />
+
+  <!-- Poem Style -->
+  <select id="style">
+    <option value="romantic">Romantic</option>
+    <option value="dark">Dark</option>
+    <option value="motivational">Motivational</option>
+    <option value="nature">Nature</option>
+    <option value="cyberpunk">Cyberpunk</option>
+    <option value="spiritual">Spiritual</option>
+  </select>
+
+  <!-- Mood -->
+  <select id="mood">
+    <option value="calm">Calm</option>
+    <option value="melancholic">Melancholic</option>
+    <option value="hopeful">Hopeful</option>
+    <option value="intense">Intense</option>
+    <option value="mysterious">Mysterious</option>
+    <option value="uplifting">Uplifting</option>
+  </select>
+
+  <!-- Length -->
+  <select id="length">
+    <option value="short">Short (4–6 lines)</option>
+    <option value="medium" selected>Medium (8–10 lines)</option>
+    <option value="long">Long (12–16 lines)</option>
+  </select>
+
+  <!-- Intensity -->
+  <label class="range-label">
+    Emotional intensity
+    <input
+      type="range"
+      id="intensity"
+      min="1"
+      max="5"
+      value="3"
+    />
+  </label>
+
+  <button type="submit">Create Poem</button>
+</form>
+    </div>
+
+    <!-- Screen 2 -->
+    <div id="screen-result" class="screen hidden poem-screen">
+      <h1>🪶 Your Poem</h1>
+
+      <pre id="resultBox" class="poem-text">
+Creating your poem...
+  </pre
+      >
+
+      <div id="history" class="history"></div>
+
+      <button onclick="goBack()">Generate Another</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
