@@ -1,5 +1,5 @@
 const webhookUrl =
-  "https://ritdev.app.n8n.cloud/webhook-test/7328b5a1-1932-418d-98eb-1417ef672559";
+  "https://ritdev.app.n8n.cloud/webhook/7328b5a1-1932-418d-98eb-1417ef672559";
 
 const form = document.getElementById("keywordForm");
 const inputScreen = document.getElementById("screen-input");
